@@ -41,7 +41,7 @@ CREATE TABLE "salaries" (
 
 CREATE TABLE "dept_manager" (
     "dept_no" varchar   NOT NULL,
-    "emp_no" varchar   NOT NULL,
+    "emp_no" integer   NOT NULL,
     CONSTRAINT "pk_dept_manager" PRIMARY KEY (
         "emp_no"
      ),
@@ -49,7 +49,7 @@ CREATE TABLE "dept_manager" (
 );
 
 CREATE TABLE "dept_emp" (
-    "emp_no" varchar   NOT NULL,
+    "emp_no" integer   NOT NULL,
     "dept_no" varchar   NOT NULL,
     CONSTRAINT "pk_dept_emp" PRIMARY KEY (
         "emp_no","dept_no"
@@ -58,4 +58,4 @@ CREATE TABLE "dept_emp" (
 
 
 
-SELECT * FROM employees
+SELECT * FROM dept_emp
