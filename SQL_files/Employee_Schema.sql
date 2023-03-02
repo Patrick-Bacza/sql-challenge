@@ -1,4 +1,5 @@
-﻿
+﻿-- Create each table needed in the database
+
 CREATE TABLE "titles" (
     "title_id"  varchar NOT NULL,
     "title" varchar   NOT NULL,
